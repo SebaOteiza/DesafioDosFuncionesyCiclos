@@ -35,7 +35,26 @@
         </div>
     </div>
     <script>
-    // Escríbe aquí tu código
+        // Escríbe aquí tu código
+
+        function operacion() {
+
+            var suma, multip, resta, divi;
+            suma = document.getElementById("suma");
+            resta = document.getElementById("resta");
+
+
+            if (suma) {
+                function suma() {
+                    var num1, num2;
+                    num1 = parseFloat(document.getElementById("valor").value);
+                    num2 = parseFloat(document.getElementById("valor2").value);
+                    var sumado = num1 + num2;
+                    document.getElementById("resultado").innerHTML = "la suma de " + num1 + " mas " + num2 + " es " +
+                        sumado;
+                }
+            }
+        }
     </script>
 </body>
 
