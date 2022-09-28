@@ -37,24 +37,45 @@
     <script>
         // Escríbe aquí tu código
 
-        function operacion() {
 
-            var suma, multip, resta, divi;
-            suma = document.getElementById("suma");
-            resta = document.getElementById("resta");
+        var repetir="si";
 
+        
 
-            if (suma) {
-                function suma() {
-                    var num1, num2;
-                    num1 = parseFloat(document.getElementById("valor").value);
-                    num2 = parseFloat(document.getElementById("valor2").value);
-                    var sumado = num1 + num2;
-                    document.getElementById("resultado").innerHTML = "la suma de " + num1 + " mas " + num2 + " es " +
-                        sumado;
-                }
-            }
+        function suma (num1, num2){
+            alert("La suma es: " + (num1+num2));
         }
+
+        function resta (num1, num2){
+            alert("La resta es: " + (num1-num2));
+        }
+
+        do{
+            
+        var operacion = prompt("Qué operación deseas realizar");
+
+        var operador1=parseInt(prompt("Ingresa el primer número:"));
+        var operador2=parseInt(prompt("Ingresa el segundo número:"));
+
+        if(operacion == "suma"){
+            suma(operador1, operador2);
+
+        }
+
+        else if (operacion == "resta"){
+            resta(operador1, operador2);
+
+        }
+
+        else{
+            alert("Lo siento, operación no contemplada")
+        }
+
+        repetir=prompt ("¿Deseas repetir?");
+
+    }while (repetir=="si");
+
+
     </script>
 </body>
 
