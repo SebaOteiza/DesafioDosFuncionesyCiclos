@@ -46,49 +46,12 @@
             </form>
         </div>
     </div>
-    <script>
+    
         // Escríbe aquí tu código
 
-        window.addEventListener("load", inicializarEventos, false)
+            <script type="text/javascript" src="Assets/ejercicio1.js"></script>
 
-        function inicializarEventos() {
-
-            var ob1 = document.getElementById("formulario");
-            ob1.addEventListener("submit", enviarMensaje, false);
-        }
-
-        function enviarMensaje() {
-
-            var nom = document.getElementById("nombre");
-            var as = document.getElementById("asunto");
-            var men = document.getElementById("mensaje");
-
-            if (nom.value == "") {
-                alert("El nombre es requerido");
-
-                // e.preventDefault();
-                //return false;
-            }
-            else
-                alert("Nombre ingresado correctamente");
-            //return true;
-
-            if(as.value == ""){
-                alert("El asunto es requerido");
-            }
-            else
-            alert("Asunto correcto");
-
-            if(men.value == ""){
-                alert("El mensaje es requerido");
-            }
-            else 
-            alert("Mensaje enviado con éxito!!!");
-        }
-
-
-
-    </script>
+    
 </body>
 
 </html>
